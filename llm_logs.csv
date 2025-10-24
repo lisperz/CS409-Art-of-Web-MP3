@@ -1,6 +1,6 @@
 Timestamp,Tool Used,Prompt/Query,Response/Code Generated,Notes
-2024-10-22 10:30,ChatGPT,How do I create a RESTful API with Express and MongoDB?,"Provided guidance on setting up Express.js server with mongoose, explained MVC pattern and routing structure","Used to understand Express.js architecture"
-2024-10-22 11:15,Cursor,Help me create user schema with mongoose,"Generated user schema code:
+2025-10-22 10:30,ChatGPT,How do I create a RESTful API with Express and MongoDB?,"Provided guidance on setting up Express.js server with mongoose, explained MVC pattern and routing structure","Used to understand Express.js architecture"
+2025-10-22 11:15,Cursor,Help me create user schema with mongoose,"Generated user schema code:
 ```javascript
 var UserSchema = new mongoose.Schema({
     name: { type: String, required: true },
@@ -9,10 +9,10 @@ var UserSchema = new mongoose.Schema({
     dateCreated: { type: Date, default: Date.now }
 });
 ```","Auto-completion helped with schema definition"
-2024-10-22 11:45,ChatGPT,How to implement query parameters in Express routes?,"Explained how to use req.query and parse JSON parameters, provided example of using Mongoose query builders with where, sort, select, limit, skip","Helped understand query parameter parsing"
-2024-10-22 14:20,Cursor,Create task model with validation,"Generated task.js model file with all required fields including name, description, deadline, completed, assignedUser, assignedUserName, dateCreated","AI-assisted code generation"
-2024-10-22 15:30,ChatGPT,How to implement two-way references between models?,"Provided explanation of maintaining referential integrity, suggested using middleware or manual updates in route handlers","Conceptual understanding of data relationships"
-2024-10-22 16:00,Cursor,Implement GET /api/users endpoint with query params,"Generated route handler code:
+2025-10-22 11:45,ChatGPT,How to implement query parameters in Express routes?,"Explained how to use req.query and parse JSON parameters, provided example of using Mongoose query builders with where, sort, select, limit, skip","Helped understand query parameter parsing"
+2025-10-22 14:20,Cursor,Create task model with validation,"Generated task.js model file with all required fields including name, description, deadline, completed, assignedUser, assignedUserName, dateCreated","AI-assisted code generation"
+2025-10-22 15:30,ChatGPT,How to implement two-way references between models?,"Provided explanation of maintaining referential integrity, suggested using middleware or manual updates in route handlers","Conceptual understanding of data relationships"
+2025-10-22 16:00,Cursor,Implement GET /api/users endpoint with query params,"Generated route handler code:
 ```javascript
 usersRoute.get(function (req, res) {
     var query = {};
@@ -26,13 +26,13 @@ usersRoute.get(function (req, res) {
     // ... additional query parameters
 });
 ```","Code completion for route implementation"
-2024-10-23 09:00,ChatGPT,Best practices for error handling in Express API?,"Recommended using try-catch blocks, proper HTTP status codes (200, 201, 400, 404, 500), and returning consistent JSON response format with message and data fields","Improved error handling approach"
-2024-10-23 10:30,Cursor,Implement PUT /api/tasks/:id with two-way references,"Generated code to update task and maintain references to user's pendingTasks array, including logic to remove from old user and add to new user","Complex logic implementation assistance"
-2024-10-23 11:45,ChatGPT,How to deploy Express app to Render?,"Provided step-by-step deployment guide including environment variables setup, build commands, and MongoDB Atlas configuration","Deployment guidance"
-2024-10-23 14:00,Cursor,Fix form-encoded data handling for database populate script,"Added code to handle string to array conversion:
+2025-10-23 09:00,ChatGPT,Best practices for error handling in Express API?,"Recommended using try-catch blocks, proper HTTP status codes (200, 201, 400, 404, 500), and returning consistent JSON response format with message and data fields","Improved error handling approach"
+2025-10-23 10:30,Cursor,Implement PUT /api/tasks/:id with two-way references,"Generated code to update task and maintain references to user's pendingTasks array, including logic to remove from old user and add to new user","Complex logic implementation assistance"
+2025-10-23 11:45,ChatGPT,How to deploy Express app to Render?,"Provided step-by-step deployment guide including environment variables setup, build commands, and MongoDB Atlas configuration","Deployment guidance"
+2025-10-23 14:00,Cursor,Fix form-encoded data handling for database populate script,"Added code to handle string to array conversion:
 ```javascript
 if (typeof pendingTasks === 'string') {
     pendingTasks = pendingTasks.split(',');
 }
 ```","Bug fix assistance"
-2024-10-23 15:30,ChatGPT,Create HTTPS version of populate script for Render,"Explained difference between http.client.HTTPConnection and HTTPSConnection, provided modified script using HTTPS for production deployment","Solved deployment script issue"
+2025-10-23 15:30,ChatGPT,Create HTTPS version of populate script for Render,"Explained difference between http.client.HTTPConnection and HTTPSConnection, provided modified script using HTTPS for production deployment","Solved deployment script issue"
